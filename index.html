@@ -7,46 +7,7 @@ layout: default
 
     <!-- <h1 class="page-heading">Posts</h1> -->
     <script>
-        $(document).ready(function() {
-            var jumbotron = $('.jumbotron');
-            var top = jumbotron.offset().top;
-            var height = jumbotron.outerHeight();
-            var limit = top + height;
-            var $window = $(window);
-            var $nav = $('#bs-navbar');
-            // var timer;
-            //
-            function handleScroll() {
-                if($window.scrollTop() > limit) {
-                    $nav.addClass('scroll-past-jumbotron');
-                }
-                else {
-                    $nav.removeClass('scroll-past-jumbotron');
-                }
-            }
-            $window.scroll(function() {
-                handleScroll();
-            })
-            //
-            // $window.scroll(function() {
-            //     if(timer) {
-            //         window.clearTimeout(timer);
-            //     };
-            //     timer = setTimeout(handleScroll, 200);
-            // })
-            // var wp = new Waypoint({
-            //     element: $('.page-content'),
-            //     handler: function(direction) {
-            //         if(direction == 'down') {
-            //             $('#bs-navbar').addClass('scroll-past-jumbotron');
-            //         }
-            //         else {
-            //             $('#bs-navbar').removeClass('scroll-past-jumbotron');
-            //         }
-            //     }
-            // })
 
-        });
     </script>
 
     <div class="page-content">
