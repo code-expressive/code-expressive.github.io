@@ -111,6 +111,11 @@
         opacity: 0;
         transition: opacity 0.5s ease-out;
     }
+    .dropdown-menu {
+        a {
+            color: $text-color;
+        }
+    }
     will-change: opacity;
 }
 

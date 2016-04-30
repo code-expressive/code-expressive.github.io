@@ -1,0 +1,22 @@
+{
+  "name": "code-expressive",
+  "version": "1.0.0",
+  "description": "Notes of an amateur web developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-expressive/jekyll_blog.git"
+  },
+  "author": "Eric Taw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-expressive/jekyll_blog/issues"
+  },
+  "homepage": "https://github.com/code-expressive/jekyll_blog#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2"
+  }
+}
