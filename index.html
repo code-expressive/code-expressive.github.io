@@ -1,0 +1,106 @@
+---
+layout: default
+---
+
+
+<div class="home">
+
+    <!-- <h1 class="page-heading">Posts</h1> -->
+    <script>
+        $(document).ready(function() {
+            var jumbotron = $('.jumbotron');
+            var top = jumbotron.offset().top;
+            var height = jumbotron.outerHeight();
+            var limit = top + height;
+            var $window = $(window);
+            var $nav = $('#bs-navbar');
+            // var timer;
+            //
+            function handleScroll() {
+                if($window.scrollTop() > limit) {
+                    $nav.addClass('scroll-past-jumbotron');
+                }
+                else {
+                    $nav.removeClass('scroll-past-jumbotron');
+                }
+            }
+            $window.scroll(function() {
+                handleScroll();
+            })
+            //
+            // $window.scroll(function() {
+            //     if(timer) {
+            //         window.clearTimeout(timer);
+            //     };
+            //     timer = setTimeout(handleScroll, 200);
+            // })
+            // var wp = new Waypoint({
+            //     element: $('.page-content'),
+            //     handler: function(direction) {
+            //         if(direction == 'down') {
+            //             $('#bs-navbar').addClass('scroll-past-jumbotron');
+            //         }
+            //         else {
+            //             $('#bs-navbar').removeClass('scroll-past-jumbotron');
+            //         }
+            //     }
+            // })
+
+        });
+    </script>
+
+    <div class="page-content">
+        <div class="wrapper">
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+                <header class="post-header">
+                    <h1 class="post-title" itemprop="name headline">An Introduction</h1>
+                    <p class="post-meta">
+                        <time datetime="2016-04-24T00:00:00-05:00" itemprop="datePublished">Apr 24, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Eric Taw</span></span>
+                    </p>
+                </header>
+
+                <div class="post-content" itemprop="articleBody">
+                    <p><strong>Hi there.</strong></p>
+
+                    <p>This blog is meant as a way for me, an amateur web developer, to take notes and remember some key information as I develop, but I hope it helps others out there struggling with the same things I’m struggling with.</p>
+
+                    <p>In the process of learning ReactJS, Node, and Express, I have read many guides, many of which do not actually do a good job of guiding the first-time developer. Even as someone with web development experience (granted, in PHP/Laravel,
+                        not JS), I found them very difficult to follow. Many of these articles do not provide adequate explanations or comments on what the code does. Even worse is when they provide deprecated code, something more common in JavaScript
+                        than other languages due to its rapid growth in popularity.</p>
+
+                    <p>Specifically, my goal is to traverse the rather mind-boggling world of JavaScript and create guides that do the following:</p>
+
+                    <ul>
+                        <li>Provide clear instructions <em>that don’t skip steps</em></li>
+                        <li>Are up to date with the latest in development and, failing that, will at least notify the reader if anything is deprecated</li>
+                    </ul>
+
+                    <p>So, all guides I write will be aimed toward the amateur developer and will double as notes for myself.</p>
+
+                    <p>No skipped lines.</p>
+
+                    <p>No deprecated BS.</p>
+
+                    <p>Let’s get started.</p>
+
+                </div>
+
+            </article>
+
+        </div>
+    </div>
+
+    <!-- <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul> -->
+
+</div>
