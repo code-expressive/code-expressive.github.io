@@ -8,7 +8,7 @@
 # Site settings
 title: Code Expressive
 email: tawe141@gmail.com
-description: Notes of an amateur web developer.
+description: Notes of an amateur web developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
