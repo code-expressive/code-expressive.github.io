@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/code-expressive/jekyll_blog#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.2"
+    "bootstrap": "^4.0.0-alpha.2",
+    "tether": "^1.3.2"
   }
 }
