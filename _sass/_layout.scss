@@ -12,7 +12,6 @@
 .site-title {
     font-size: 26px;
     font-weight: 300;
-    line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -287,9 +286,13 @@
     background: url(../img/jumbo-min.jpg) no-repeat center center scroll;
     background-size: cover;
     overflow: hidden;
+    border-radius: 0;
     h1, p {
         color: $grey-color-light;
         text-align: center;
+    }
+    h1 {
+        font-size: 63px;
     }
 
     .jumbotron-content {
