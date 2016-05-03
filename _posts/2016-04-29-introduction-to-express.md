@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "An Introduction to Express.js"
+description: "Express.js: Part 1"
 date: 2016-04-29
 tags: [javascript, node, express, backend, beginner]
 ---
