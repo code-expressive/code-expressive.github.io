@@ -7,7 +7,7 @@
             {% endif %}
             {% if page.description %}
             <p>{{ page.description }}</p>
-            {% elsif page.url == '/index.html' %}
+            {% elsif page.url == '/' %}
             <p>Notes of an amateur web developer</p>
             {% endif %}
         </div>
@@ -21,11 +21,8 @@
                 <div class="collapse navbar-toggleable-xs" id="navbar-links">
                     <a class="site-title" href="/" style="{% if page.url != '/' %}{{ 'opacity: 1;' }}{% endif %}">Code <span style="text-decoration: underline;">Expressive</span></a>
                     <ul class="nav navbar-nav">
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Guides</a>
+                            <a class="nav-link" href="/series">Series</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>

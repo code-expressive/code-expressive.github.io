@@ -6,6 +6,8 @@ date: 2016-04-29
 tags: [javascript, node, express, backend, beginner]
 ---
 
+Learn to create a basic web application using Node.js and Express.js, two of the most popular technologies powering web applications today. 
+
 * TOC
 {:toc}
 

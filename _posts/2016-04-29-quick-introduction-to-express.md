@@ -6,6 +6,8 @@ date: 2016-04-29
 tags: [javascript, node, express, backend, beginner]
 ---
 
+If you're familiar with Node.js and just want a quick introduction to Express.js's capabilities, this is for you!
+
 * TOC
 {:toc}
 

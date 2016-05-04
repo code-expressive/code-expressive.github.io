@@ -3,6 +3,7 @@ layout: post
 title: A Test Post
 date: 2016-04-09
 author: Eric Taw
+visible: 0
 ---
 
 # This is a test post
