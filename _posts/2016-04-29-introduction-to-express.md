@@ -206,15 +206,11 @@ app.listen(3000, function() {
 </div>
 
 <div class="row">
-<div class="col-md-6 col-sm-12">
+<div class="col-md-6 col-sm-12" markdown="1">
 
 To start the server and see your handiwork, go back into the command line and ensure you're in your base project directory.
 
-Then, run
-
-```
-node app.js
-```
+Then, run `node app.js`.
 
 Go into your browser and type in `localhost:3000` into your URL bar. You should see a message that says "Hello there!"
 
