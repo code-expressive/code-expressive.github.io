@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: code
 title: A Test Post
 date: 2016-04-09
 author: Eric Taw

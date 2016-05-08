@@ -1,12 +1,14 @@
 ---
-layout: post
+layout: code
 title: "An Introduction to Express.js"
 description: "Express.js: Part 1"
+series: "Express.js"
+part: 1
 date: 2016-04-29
 tags: [javascript, node, express, backend, beginner]
 ---
 
-Learn to create a basic web application using Node.js and Express.js, two of the most popular technologies powering web applications today. 
+Learn to create a basic web application using Node.js and Express.js, two of the most popular technologies powering web applications today.
 
 * TOC
 {:toc}
@@ -50,19 +52,30 @@ npm install express --save
 This will add Express to your `node_modules` folder. The `--save` adds Express as a dependency to your `package.json`.
 
 # Your First Server
+<div class="row">
+<div class="col-md-6 col-sm-12" markdown="1">
 
 Create a new file called `app.js` in your base directory. Now, we need to tell Node, which we will use to run our server, that our app will require Express.
 
 In your `app.js`, add the following:
-
+</div>
+<div class="col-md-6 col-sm-12" markdown="1">
 ```javascript
 // app.js
 
 var express = require('express');
 // Now Node will know to pull in Express into this app.
 ```
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6 col-sm-12" markdown="1">
 
 Then, we can run the top-level function `express();` and assign the returned object to `app`.
+
+</div>
+<div class="col-md-6 col-sm-12" markdown="1">
 
 ```javascript
 // app.js
@@ -71,7 +84,12 @@ var express = require('express');
 var app = express();
 ```
 
+</div>
+</div>
+
 # GET Requests
+<div class="row">
+<div class="col-md-6 col-sm-12" markdown="1">
 
 Now, our `app` object has several very useful methods that tell the application what to do when a user arrives at your webpage (among other things).
 
@@ -88,6 +106,9 @@ callback (Function): what to do when the user arrives at the URL
 
 The callback function should take in a request (`req`) object and a response (`res`) object. For example:
 
+</div>
+<div class="col-md-6 col-sm-12" markdown="1">
+
 ```javascript
 app.get('/', function(req, res) {
     // what to do when the user arrives at the URL
@@ -97,8 +118,16 @@ app.get('/', function(req, res) {
 `req` is the request object, which may contain HTTP headers, form data, etc.
 
 `res` is the response object, which may contain data that is sent back to the user's browser.
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6 col-sm-12" markdown="1">
 
 For this exercise, let's do something simple. When the user arrives at `example.com`, we'll respond with a short message by using the `res.send()` method.
+
+</div>
+<div class="col-md-6 col-sm-12" markdown="1">
 
 ```javascript
 // app.js
@@ -111,11 +140,23 @@ app.get('/', function(req, res) {
 });
 ```
 
+</div>
+</div>
+
+
+
 # Listening to a Port
+<div class="row">
+<div class="col-md-6 col-sm-12" markdown="1">
 
 However, this app still won't do anything yet. We need to have the app listen in on a port number.
 
 We can do this using the `app.listen()` method, like so.
+
+Now the app will only respond if you connect via port 3000.
+
+</div>
+<div class="col-md-6 col-sm-12" markdown="1">
 
 ```javascript
 // app.js
@@ -130,13 +171,21 @@ app.get('/', function(req, res) {
 app.listen(3000);
 ```
 
-Now the app will only respond if you connect via port 3000.
+</div>
+</div>
+
+
 
 # How Do I Know When My Server is Running?
+<div class="row">
+<div class="col-md-6 col-sm-12" markdown="1">
 
 If you run `app.js` as it is right now, you won't have any indication it is running.
 
 To fix this, we can add the following function to `app.listen()` that will put some text in your command line so you know the server is running without error:
+
+</div>
+<div class="col-md-6 col-sm-12" markdown="1">
 
 ```javascript
 // app.js
@@ -153,6 +202,12 @@ app.listen(3000, function() {
 });
 ```
 
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6 col-sm-12">
+
 To start the server and see your handiwork, go back into the command line and ensure you're in your base project directory.
 
 Then, run
@@ -162,3 +217,6 @@ node app.js
 ```
 
 Go into your browser and type in `localhost:3000` into your URL bar. You should see a message that says "Hello there!"
+
+</div>
+</div>
