@@ -15,6 +15,8 @@ Learn to create a basic web application using Node.js and Express.js, two of the
 
 # What is Express?
 
+<div class="content-row" markdown="1">
+
 Express.js is a "Fast, unopinionated, minimalist web framework," as advertised on their [webpage](expressjs.com).
 
 So what does that mean?
@@ -25,7 +27,11 @@ You can imagine a web framework like a website already half-built for you. You d
 
 While other frameworks give you more capabilities at your fingertips as one package, Express prefers to keep everything as lightweight as possible and lets you add modules as you see fit. For instance, you won't find authentication capabilities in Express, but you can certainly install [Passport](passportjs.org) to handle this.
 
+</div>
+
 # Getting Express
+
+<div class="content-row" markdown="1">
 
 This is going to require a bit of command line work. I'll be referring to the command line prompt as Terminal, as it is the OSX/Linux implementation of the command line. On Windows, it's called the Command Prompt, and can easily be run by pressing the Start button and typing `cmd`, then pressing Enter. The commands will be the same regardless of operating system, but I'll have two version of each step if they differ across OS's.
 
@@ -34,25 +40,48 @@ First, you'll need Node.js and npm installed, which is quite easy. Download and 
 To check if everything installed correctly, you can run `node -v` in your Terminal to get the version number.
 
 Installing Node this way should also install the Node Package Manager (npm). You can confirm this by running `npm -v` in Terminal.
+</div>
+
+<div class="row content-row">
+<div class="col-md-6 col-sm-12" markdown="1">
 
 After confirming your Node/npm installation, create a new folder wherever you like, then navigate to it using Terminal and execute the following:
+
+This will add a `package.json` that will describe the dependencies of your project, as well as some basic info about the project.
+
+</div>
+<div class="col-md-6 col-sm-12" markdown="1">
 
 ```
 npm init
 ```
 
-This will add a `package.json` that will describe the dependencies of your project, as well as some basic info about the project.
+</div>
+</div>
 
-To install the Express package, execute
+<div class="row content-row">
+<div class="col-md-6 col-sm-12" markdown="1">
+
+To install the Express package, execute the command on the right.
+
+This will add Express to your `node_modules` folder. The `--save` adds Express as a dependency to your `package.json`.
+
+</div>
+<div class="col-md-6 col-sm-12" markdown="1">
 
 ```
 npm install express --save
 ```
 
-This will add Express to your `node_modules` folder. The `--save` adds Express as a dependency to your `package.json`.
+</div>
+</div>
+
+
+
+</div>
 
 # Your First Server
-<div class="row">
+<div class="row content-row">
 <div class="col-md-6 col-sm-12" markdown="1">
 
 Create a new file called `app.js` in your base directory. Now, we need to tell Node, which we will use to run our server, that our app will require Express.
@@ -69,7 +98,7 @@ var express = require('express');
 </div>
 </div>
 
-<div class="row">
+<div class="row content-row">
 <div class="col-md-6 col-sm-12" markdown="1">
 
 Then, we can run the top-level function `express();` and assign the returned object to `app`.
@@ -88,7 +117,7 @@ var app = express();
 </div>
 
 # GET Requests
-<div class="row">
+<div class="row content-row">
 <div class="col-md-6 col-sm-12" markdown="1">
 
 Now, our `app` object has several very useful methods that tell the application what to do when a user arrives at your webpage (among other things).
@@ -121,7 +150,7 @@ app.get('/', function(req, res) {
 </div>
 </div>
 
-<div class="row">
+<div class="row content-row">
 <div class="col-md-6 col-sm-12" markdown="1">
 
 For this exercise, let's do something simple. When the user arrives at `example.com`, we'll respond with a short message by using the `res.send()` method.
@@ -146,7 +175,7 @@ app.get('/', function(req, res) {
 
 
 # Listening to a Port
-<div class="row">
+<div class="row content-row">
 <div class="col-md-6 col-sm-12" markdown="1">
 
 However, this app still won't do anything yet. We need to have the app listen in on a port number.
@@ -177,7 +206,7 @@ app.listen(3000);
 
 
 # How Do I Know When My Server is Running?
-<div class="row">
+<div class="row content-row">
 <div class="col-md-6 col-sm-12" markdown="1">
 
 If you run `app.js` as it is right now, you won't have any indication it is running.
@@ -205,8 +234,7 @@ app.listen(3000, function() {
 </div>
 </div>
 
-<div class="row">
-<div class="col-md-6 col-sm-12" markdown="1">
+<div class="content-row" markdown="1">
 
 To start the server and see your handiwork, go back into the command line and ensure you're in your base project directory.
 
@@ -214,5 +242,4 @@ Then, run `node app.js`.
 
 Go into your browser and type in `localhost:3000` into your URL bar. You should see a message that says "Hello there!"
 
-</div>
 </div>
